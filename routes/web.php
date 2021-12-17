@@ -32,7 +32,7 @@ Route::get('/', function () {
         ]
     ];
     return view('home', $data);
-});
+})->name('home');
 
 Route::get('/pagina_1', function(){
     $data = [
