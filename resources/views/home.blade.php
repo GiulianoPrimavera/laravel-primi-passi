@@ -26,7 +26,7 @@
        <div class="navbar">
            <ul>
                @foreach ($lista_pagine as $nome_pagina)
-               <li><a href=""></a>{{$nome_pagina}}</li>
+               <li><a href="pagina_1">{{$nome_pagina}}</a></li>
                @endforeach
            </ul>
        </div>
