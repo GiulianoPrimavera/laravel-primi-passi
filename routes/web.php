@@ -24,3 +24,11 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/pagina_1', function(){
+    $data = [
+        'titolo_pagina' => 'sono la pagina 1'
+    ];
+
+    return view('pagina_1', $data);
+})->name('pagina_1');
