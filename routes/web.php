@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Route per la home page */
 Route::get('/', function () {
     $data = [
         'hello' => 'hello world',
@@ -34,6 +35,7 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
+/* Route per la pagina 1 */
 Route::get('/pagina_1', function(){
     $data = [
         'titolo_pagina' => 'sono la pagina 1'
@@ -41,7 +43,7 @@ Route::get('/pagina_1', function(){
     return view('pagina_1', $data);
 })->name('pagina_1');
 
-
+/* Route per la pagina 2 */
 Route::get('/pagina_2', function(){
     $data = [
         'titolo_pagina' => 'sono la pagina 2'
@@ -49,7 +51,7 @@ Route::get('/pagina_2', function(){
     return view('pagina_2', $data);
 })->name('pagina_2');
 
-
+/* Route per la pagina 3 */
 Route::get('/pagina_3', function(){
     $data = [
         'titolo_pagina' => 'sono la pagina 3'
