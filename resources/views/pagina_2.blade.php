@@ -8,5 +8,8 @@
 </head>
 <body>
     <h1>{{$titolo_pagina}}</h1>
+
+    {{-- link per tornare alla home --}}
+    <div><a href="{{ route('home') }}">torna alla home</a></div>
 </body>
 </html>
